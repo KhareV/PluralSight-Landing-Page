@@ -2,7 +2,7 @@
 
 A responsive landing page for Starbucks, built with HTML, CSS.
 
-![Screenshot](screenshot4.png)
+![Screenshot](Screenshot4.png)
 
 ## Features
 
