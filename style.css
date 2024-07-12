@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+	background: #181818 ;
+	font-family: arial, helvetica, sans-serif;
+	color: white;
+	font-weight: 300;
+	overflow: hidden;
+
+}
+#wrapper{
+	display: flex;
+	flex-direction: row;
+}
+#left{
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 12px;
+
+
+
+}
+#signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+#signin .logo img{
+	width: 300px;
+
+}
+#signin .logo{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+#signin form{
+	width: 80%;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+#signin .text-input{
+	width: 100%;
+	background: #181818;
+	border-radius: 10px;
+	border: 2px solid darkgrey;
+	
+	margin-bottom: 20px;
+	color: white;
+
+
+}
+#signin .primary-btn{
+	width: 102%;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	background: #f96816;
+	border: red solid 0.5px;
+	color: white;
+	height: 30px;
+	transition: all 0.2s;
+}
+#signin .primary-btn:hover{
+	background-color: #ff7b39;
+}
+#signin .links a{
+	display: block;
+	text-align: center;
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: white;
+	transition: all 0.5s;
+}
+#signin .links a:hover{
+	color: #ff7b39;
+}
+#signin .or{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#signin .or .bar{
+	width: 100px;
+}
+#signin .secondary-btn{
+	background: #181818;
+	color: white;
+	border-radius: 5px;
+	border: 2px solid darkgrey;
+	height: 30px;
+	width: 70%;
+	transition: all 0.5s;
+	margin-bottom: 40px;
+}
+#signin .secondary-btn:hover{
+	color: #ff7b39;
+	border-color: #ff7b39;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+footer .link{
+	display: flex;
+	flex-direction: row;
+}
+footer a{
+	text-decoration: none;
+	color: orangered;
+	transition: all 0.5s;
+}
+footer a:hover{
+	color: #ff7b39;
+}
+
+#right{
+	display: flex;
+	flex: 3;
+
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://image.ibb.co/cO9Lxq/login-bg.jpg");
+	background-size: cover;
+
+
+
+}
+.showcase-content p, a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.showcase-content p{
+	padding: 20px;
+}
+.showcase-content a{
+	text-decoration: none;
+	color: white;
+	border: 2px solid whitesmoke;
+
+	height: 30px;
+	transition: all 1s;
+	
+}
+.showcase-content a:hover{
+	color: #ff7b39;
+	border-color: #ff7b39;
+}
+@media (min-width: 1200px) {
+  #left {
+    flex: 4;
+  }
+
+  #right {
+    flex: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #signin .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding-top: 1rem;
+  }
+
